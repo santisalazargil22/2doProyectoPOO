@@ -8,7 +8,11 @@ from tripulacion.tripulacionController import tripulacionController
 from vuelo.vueloController import vueloController
 
 
+# NOTA: La documentacion correspondiente a las clases se encuentra en el MVC de la clase aerolinea
+
 def main():
+    # Inicializacion de los controladores mediante creacion de objetos
+
     aerolineaControl = aerolineaController()
     avionControl = avionController()
     helicopteroControl = helicopteroController()
@@ -17,6 +21,12 @@ def main():
     puertaControl = puertaController()
     tripulacionControl = tripulacionController()
     vueloControl = vueloController()
+
+    # Aqui muy resumidamente se maneja un menu principal que me permite acceder a las diferentes clases con las que
+    # quiero trabajar dentro de mi programa, al elegir una opcion se me desplegara otro menu que una vez mas me pedira
+    # digitar otra opcion, esta vez la opcion ingresada indicara si quiero crear un objeto, imprimir todos los objetos
+    # existentes en el diccionario de dicha clase, actualizar un objeto o volver al menu. Al presionar la opcion de
+    # salir en el segundo menu se volvera al menu principal, al hacerlo en el principal se cerrara el programa
 
     print("Buen dia usuario")
     print("El presente sistema le permitira crear, consultar y modificar diferentes aspectos del aeropuerto")
